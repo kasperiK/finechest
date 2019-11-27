@@ -32,6 +32,7 @@ const AddFine = (props) => (
 				<TextField
 					label="Summa (€)"
 					type="number"
+					InputProps={{ inputProps: { min: 0 } }}
 					name="amount"
 					onKeyUp={((e) => props.handleFineInput(e))}
 				/>

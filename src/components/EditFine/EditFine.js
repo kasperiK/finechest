@@ -36,6 +36,7 @@ const EditFine = (props) => (
 					label="Summa (€)"
 					type="number"
 					name="amount"
+					min="0"
 					defaultValue={props.fineToEdit.amount}
 					onKeyUp={((e) => props.handleFineInput(e))}
 				/>
