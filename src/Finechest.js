@@ -33,9 +33,16 @@ const Finechest = () => {
 	const [formErrMsg, setFormErrMsg] = useState();
 
 	const handleFineInput = (e) => {
-		const { value } = e.target;
+		let { value } = e.target;
 		const { name } = e.target;
-		const inputs = {
+		const { type } = e.target;
+		const { min } = e.target;
+		let inputs;
+		if (type === 'number' && parseInt(value, 10) < parseInt(min, 10)) {
+			value = '';
+			e.target.value = '';
+		}
+		inputs = {
 			...fineInputs,
 			[name]: value
 		};
