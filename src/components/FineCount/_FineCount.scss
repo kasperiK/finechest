@@ -1,0 +1,34 @@
+.FineCount {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 1rem;
+	max-width: 420px;
+	text-align: center;
+	@media screen and (min-width: 767px) {
+		max-width: 100%;
+		flex-direction: row;
+		margin-top: 3rem;
+		text-align: left;
+	}
+	&__Heading {
+		margin-bottom: 1rem;
+		@media screen and (min-width: 767px) {
+			margin-bottom: 0;
+		}
+	}
+	&__AmountHolder {
+		font-weight: 500;
+	}
+	&__PaidAmount {
+		color: #a80f0f;
+		&.fines-paid {
+			color: #01AE52;
+		}
+	}
+	&__TotalAmount {
+		color: #01AE52;
+	}
+}

@@ -1,0 +1,37 @@
+.Header {
+	width: 100%;
+	text-align: center;
+	position: relative;
+	&__ButtonHolder {
+		padding-top: 1rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		@media screen and (min-width: 576px) {
+			flex-direction: row;
+		}
+	}
+	&__Button {
+		@media screen and (min-width: 576px) {
+			margin: 0 1rem;
+		}
+	}
+	&__LogoutButton {
+		position: absolute;
+		top: 0;
+		right: 0;
+		background: none;
+		border: 0;
+		padding: 0;
+		cursor: pointer;
+		&:hover {
+			.Header__LogoutIcon {
+				fill: darken(#ffffff, 30%) !important;
+			}
+		}
+	}
+	&__LogoutIcon {
+		fill: #ffffff !important;
+	}
+}

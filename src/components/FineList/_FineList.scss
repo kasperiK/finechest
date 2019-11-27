@@ -1,0 +1,36 @@
+.FineList {
+	width: 100%;
+	margin-top: 2rem;
+	text-align: center;
+	@media screen and (min-width: 767px) {
+		text-align: left;
+		margin-top: 4rem;
+	}
+	&__ReasonHolder {
+		display: none;
+		align-items: center;
+		margin-bottom: .5rem;
+		margin-top: 2rem;
+		@media screen and (min-width: 767px) {
+			display: flex;
+			flex-direction: row;
+		}
+	}
+	&__Reason {
+		flex: 0 0 33.333333%;
+		font-weight: bold;
+		padding: 0 1rem;
+		text-align: center;
+		@media screen and (min-width: 767px) {
+			text-align: left;
+		}
+	}
+}
+
+.RemoveFineButton {
+	background-color: #a80f0f !important;
+	color: #fff !important;
+	&:hover {
+		background-color: #840e0e !important;
+	}
+}

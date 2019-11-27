@@ -1,0 +1,50 @@
+body {
+	height: 100vh;
+	background-color: #333333;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 1rem;
+	color: #FFFFFF;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	margin-bottom: 1rem;
+	color: #FFFFFF;
+}
+
+p {
+	margin: 0;
+	margin-bottom: 1rem;
+	color: #FFFFFF;
+}
+
+.Finechest {
+	width: 100%;
+	max-width: 768px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+	padding: 1.25rem;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+	box-shadow: 0 0 0 30px #424242 inset !important;
+	-webkit-text-fill-color: #FFFFFF !important;
+}

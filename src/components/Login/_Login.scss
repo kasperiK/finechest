@@ -1,0 +1,42 @@
+.Login {
+	display: flex;
+	flex-direction: column;
+	& button {
+		margin-top: 1rem;
+	}
+	@media screen and (min-width: 767px) {
+		flex-direction: row;
+		align-items: flex-end;
+		& button {
+			margin-top: 0;
+		}
+	}
+	&__InputHolder {
+		flex: 1;
+		margin-bottom: 1rem !important;
+		@media screen and (min-width: 767px) {
+			margin-right: 1rem !important;
+			margin-bottom: 0 !important;
+		}
+		& .MuiInput-formControl {
+			&:before {
+				border-color: #FFFFFF;
+			}
+			&:hover:not(.Mui-disabled) {
+				&:before {
+					border-color: #FFFFFF;
+				}
+			}
+		}
+		& input, & label {
+			color: #FFFFFF;
+		}
+	}
+	&__Error {
+		color: #a80f0f;
+	}
+	&__Progress {
+		margin-top: 2rem;
+		display: none;
+	}
+}

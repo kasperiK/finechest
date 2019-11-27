@@ -1,0 +1,126 @@
+.FineListItemHolder {
+	text-align: left;
+	max-width: 420px;
+	margin: 0 auto;
+	background-color: #424242;
+	&.FinePaid {
+		opacity: .4;
+	}
+	& button {
+		background: none;
+		border: 0;
+		padding: 0;
+		margin-right: .25rem;
+		cursor: pointer;
+		&:disabled {
+			cursor: default;
+			& .FineListItem__IconEdit {
+				&:hover {
+					fill: #FFFFFF!important;
+				}
+			}
+			& .FineListItem__IconDelete {
+				&:hover {
+					fill: #F48FB1 !important;
+				}
+			}
+		}
+	}
+	@media screen and (min-width: 767px) {
+		flex-direction: row;
+		width: 100%;
+		max-width: 100%;
+		margin-top: 0;
+		margin-bottom: .75rem;
+		border-radius: 4px;
+		box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 2px 1px -1px rgba(0,0,0,0.12);
+	}
+}
+
+.FineListItem {
+	display: flex;
+	width: 100%;
+	margin-left: auto;
+	@media screen and (min-width: 767px) {
+		align-items: center;
+	}
+	&__Section {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: 33%;
+		flex: 0 0 33.333333%;
+		align-self: stretch;
+		justify-content: center;
+		text-align: center;
+		padding: 1rem;
+		position: relative;
+		font-weight: 500;
+		@media screen and (min-width: 767px) {
+			width: 33.333333%;
+			flex: 0 0 33.333333%;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			text-align: left;
+		}
+	}
+	&__IconHolder {
+		padding-top: .75rem;
+		margin-top: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@media screen and (min-width: 767px) {
+			margin-top: 0;
+			padding-top: 0;
+			justify-content: start;
+		}
+		& :last-child {
+			margin-right: 0;
+		}
+	}
+	&__Icon {
+		width: 25px !important;
+		height: 25px !important;
+		margin-left: 0 !important;
+	}
+	&__IconEdit {
+		fill: #FFFFFF!important;
+		&:hover {
+			fill: darken(#FFFFFF, 30%) !important;
+		}
+	}
+	&__IconDelete {
+		fill: #F48FB1 !important;
+		&:hover {
+			fill: darken(#F48FB1, 10%) !important;
+		}
+	}
+	&__IconPaid {
+		color: #FFFFFF;
+		border-radius: 500px;
+		padding: 2px;
+		margin-left: auto !important;
+		@media screen and (min-width: 767px) {
+			margin-left: 1.25rem !important;
+		}
+		&--Green {
+			background-color: #01AE52;
+		}
+		&--Red {
+			background-color: #a80f0f;
+		}
+	}
+	&__CardContent {
+		padding-left: 2rem;
+		font-weight: 500;
+		width: 100%;
+		& .MuiCardActions-root {
+			padding: 0;
+		}
+		& h2 {
+			font-weight: 600;
+		}
+	}
+}
